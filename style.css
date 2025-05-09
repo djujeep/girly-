@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(214, 225, 240);
+    font-family: 'Outfit', sans-serif; /* Apply Outfit font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* QR Code Box */
+#frontend-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 375px;
+    text-align: center;
+}
+
+/* QR code Image */
+#frontend img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* QR code description */
+#qrcode {
+    text-align: center;
+    padding: 10px;
+}
+
+#qrcode strong {
+    font-size: 18px;
+    color: #1f3251;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#qrcode p {
+    font-size: 14px;
+    color: #7d889e;
+}
+
+/* Desktop version */
+@media (min-width: 1024px) {
+    #frontend-component {
+        max-width: 400px;
+        padding: 30px;
+    }
+    
+    #qrcode strong {
+        font-size: 20px;
+    }
+
+    #qrcode p {
+        font-size: 16px;
+    }
+}
